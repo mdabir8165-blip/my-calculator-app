@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.dabir.mycalculator",
+        "sha256_cert_fingerprints": ["2D:61:94:7A:4E:01:F1:35:A8:1A:00:BD:6C:E5:63:20:61:07:0A:24:CA:6A:6D:7D:A1:CF:CA:9B:D8:DB:BD:67"]
+      }
+    }]
