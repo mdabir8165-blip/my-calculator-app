@@ -1,0 +1,109 @@
+:root {
+    --bg-page: #e7e2e7;
+    --bg-calc: #000000;
+    --text-title: rgb(0, 204, 255);
+    --divider-color:rgb(48, 48, 71);
+    --btn-default: #ffffff;
+    --btn-danger: red;
+    --btn-danger-hover: rgb(134, 8, 8);
+    --btn-operator: orange;
+    --btn-operator-hover: rgb(107, 72, 6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: var(--bg-page);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: arial, sans-serif;
+
+}
+
+.Calculator {
+    background-color: var(--bg-calc);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+    width: 330px;
+    text-align: center;
+}
+
+.Calculator h3 {
+    color: var(--text-title);
+    font-size: 28px;
+    font-family: georgia;
+    margin-bottom: 20px;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: right;
+    margin-bottom: 15px;
+    outline: none;
+    pointer-events: none;
+
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--divider-color);
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--btn-default);
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type=button]:hover {
+    filter: brightness(0.9);
+}
+
+input[type=button]:active {
+    transform: scale(0.95);
+}
+
+#reset, #delete {
+    background-color: var(--btn-danger);
+    color: #ffffff;
+}
+
+#reset:hover, #delete:hover {
+    background-color: var(--btn-danger-hover);
+}
+
+#divison, #multiplication, #subtraction, #addition, #eqal {
+    background-color: var(--btn-operator);
+    color: #ffffff;
+}
+
+#divison:hover, #multiplication:hover, #subtraction:hover, #addition:hover, #eqal:hover {
+    background-color: var(--btn-operator-hover);
+}
+
+
