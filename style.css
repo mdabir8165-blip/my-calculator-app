@@ -78,14 +78,17 @@ input[type=button] {
     font-size: 18px;
     cursor: pointer;
     transition: all 0.2s ease;
+    outline:none;
+    -wedkit-tap-highlight-color: transparent;
 }
 
-input[type=button]:hover {
-    filter: brightness(0.9);
+input[type=button]:focus {
+    outline: none;
 }
 
 input[type=button]:active {
     transform: scale(0.95);
+    opacity: 0.8;
 }
 
 #reset, #delete {
@@ -93,17 +96,23 @@ input[type=button]:active {
     color: #ffffff;
 }
 
-#reset:hover, #delete:hover {
-    background-color: var(--btn-danger-hover);
-}
+
 
 #divison, #multiplication, #subtraction, #addition, #eqal {
     background-color: var(--btn-operator);
     color: #ffffff;
 }
 
-#divison:hover, #multiplication:hover, #subtraction:hover, #addition:hover, #eqal:hover {
+
+@media (hover: hover) {
+    input[type=button]:hover {
+        filter: brightness(0.9);
+    }
+    #reset:hover, #delete:hover {
+    background-color: var(--btn-danger-hover);
+}
+    #divison:hover, #multiplication:hover, #subtraction:hover, #addition:hover, #eqal:hover {
     background-color: var(--btn-operator-hover);
 }
-
+}
 
